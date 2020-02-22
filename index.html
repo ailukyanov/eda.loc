@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eda</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav-hamburger">
+            <button class="hamburger hamburger--collapse" type="button" id="hamburger">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+        <aside class="aside">
+            <div class="logo">
+                <img src="img/eda.svg" alt="logo">
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav-link">рецепты</a> </li>
+                    <li class="nav-item"><a href="#" class="nav-link">продукты</a> </li>
+                    <li class="nav-item"><a href="#" class="nav-link">как приготовить</a> </li>
+                    <li class="nav-item"><a href="#" class="nav-link">кулинарная книга</a> </li>
+                    <li class="nav-item"><a href="#" class="nav-link">здоровье</a> </li>
+                    <li class="nav-item"><a href="#" class="nav-link">авторы</a> </li>
+                </ul>
+            </nav>
+            <div class="langs">
+                <a href="#" class="lang">ru</a>
+                <a href="#" class="lang">en</a>
+            </div>
+            <div class="nav-social">
+                <a href="#" class="nav-social-link vk">
+                    <i class="fab fa-vk"></i>
+                </a>
+                <a href="#" class="nav-social-link fb">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="nav-social-link inst">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="nav-social-link gplus">
+                    <i class="fab fa-google-plus-g"></i>
+                </a>
+            </div>
+        </aside>
+        <div class="content">
+            <div class="container">
+                <header class="header">
+                    <div class="header-container">
+                        <div class="search">
+                            <input type="text">
+                            <button class="search-button">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        <div class="notification">
+                            <a href="#">
+                                <i class="fas fa-bell"></i>
+                            </a>
+                        </div>
+                        <div class="user">
+                            <a href="#">
+                                <i class="fas fa-user"></i>
+                            </a>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="branch">
+                    <div></div>
+                </div>
+                <section class="recipe-selection">
+                    <h1>подбор рецептов</h1>
+                    <div class="recipe-selection-sort">
+                        <div class="selection-sort-container">
+                            <div class="selection-sort-item">
+                                <select name="deserts">
+                                    <option value="vad">Выпечка и десерты</option>
+                                </select>
+                            </div>
+                            <div class="selection-sort-item">
+                                <select name="bl">
+                                    <option value="vad">Любое блюдо</option>
+                                </select>
+                            </div>
+                            <div class="selection-sort-item">
+                                <select name="kh">
+                                    <option value="vad">Любая кухня</option>
+                                </select>
+                            </div>
+                            <div class="selection-sort-item">
+                                <select name="mn">
+                                    <option value="vad">Любое меню</option>
+                                </select>
+                            </div>
+                            <div class="selection-sort-item">
+                                <select name="sj">
+                                    <option value="vad">Сложность</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="selection-buttons">
+                            <div class="selection-ing">
+                                <span>Ингридиенты, детали</span>
+                            </div>
+                            <div class="selection-button">
+                                <button>Подобрать рецепты</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recipe-grid">
+                        <div class="recipe-grid-item">
+                            <a href="#">
+                                <img class="recipe-picture" src="img/01.jpg" alt="recipe">
+                                <div class="recipe-big-caption-container">
+                                    <h5>блюдо дня</h5>
+                                    <h2>куриные ножки на гриле</h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="recipe-grid-item">
+                            <a href="#">
+                                <img class="recipe-picture" src="img/02.jpg" alt="recipe">
+                                <div class="recipe-big-caption-container">
+                                    <h5>лучшие рецепты недели</h5>
+                                    <h2>7 лучших рецептов недели</h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="recipe-grid-item ots">
+                            <a href="#">
+                                <div class="small-captions-container">
+                                    <div class="recipe-small-caption-container">
+                                        <h3>КАК ПРИГОТОВИТЬ ПИРОГ В ОДНОЙ ПОСУДЕ 5 РЕЦЕПТОВ</h3>
+                                    </div>
+                                </div>
+                                <img class="recipe-picture" src="img/03.jpg" alt="recipe">
+                            </a>
+                        </div>
+                        <div class="recipe-grid-item">
+                            <a href="#">
+                                <div class="small-captions-container">
+                                    <div class="useful">
+                                        <span>полезное</span>
+                                    </div>
+                                    <div class="recipe-small-caption-container">
+                                        <h3>КАК ПРИГОТОВИТЬ СЫРНЫЙ ТОРТ С ОВОЩАМИ </h3>
+                                    </div>
+                                </div>
+                                <img class="recipe-picture" src="img/04.jpg" alt="recipe">
+                            </a>
+                        </div>
+                        <div class="recipe-grid-item">
+                            <a href="#">
+                                <div class="small-captions-container">
+                                    <div class="recipe-small-caption-container">
+                                        <h3>10 ПРОСТЫХ НАПИТКОВ В ЖАРУ</h3>
+                                    </div>
+                                </div>
+                                <img class="recipe-picture" src="img/05.jpg" alt="recipe">
+                            </a>
+                        </div>
+                        <div class="recipe-grid-item">
+                            <a href="#">
+                                <div class="small-captions-container">
+                                    <div class="recipe-small-caption-container">
+                                        <h3>ЧТО ТАКОЕ МЕД?</h3>
+                                    </div>
+                                </div>
+                                <img class="recipe-picture" src="img/06.jpg" alt="recipe">
+                            </a>
+                        </div>
+                        <div class="recipe-grid-item">
+                            <a href="#">
+                                <div class="small-captions-container">
+                                    <div class="recipe-small-caption-container">
+                                        <h3>КАК ПРАВИЛЬНО ЗАМЕСИТЬ ДРОЖЕВОЕ ТЕСТО</h3>
+                                    </div>
+                                </div>
+                                <img class="recipe-picture" src="img/07.jpg" alt="recipe">
+                            </a>
+                        </div>
+                        <div class="recipe-grid-item">
+                            <a href="#">
+                                <div class="small-captions-container">
+                                    <div class="recipe-small-caption-container">
+                                        <h3>ЧЕЛОВЕК, КОТОРЫЙ ДЕЛАЕТ ЛУЧШИЕ МИТБОЛЫ В БЕЛЬГИИ</h3>
+                                    </div>
+                                </div>
+                                <img class="recipe-picture" src="img/08.jpg" alt="recipe">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="branch">
+                    <div></div>
+                </div>
+                <section class="recipe">
+                    <h1>рецепты</h1>
+                    <div class="recipes-tabs">
+                        <div class="recipe-tabs-container">
+                            <div class="recipe-tab"><a href="#" class="recipe-tab-link active-tab">Новые рецепты</a></div>
+                            <div class="recipe-tab"><a href="#" class="recipe-tab-link">Популярные</a></div>
+                            <div class="recipe-tab"><a href="#" class="recipe-tab-link">Рекомендуем</a></div>
+                        </div>
+                    </div>
+                    <div class="recipes-content">
+                        <div class="recipes-content-item">
+                            <div class="recipe-img-container">
+                                <img src="img/09.jpg" alt="recipe">
+                                <a href="#" class="recipe-author">
+                                    <div class="recipe-author-pic">
+                                        <img src="img/author.png" alt="author">
+                                    </div>
+                                    <span class="recipe-author-name">Daria Fedorenko</span>
+                                </a>
+                            </div>
+                            <div class="recipe-text-wrapper">
+                                <div class="recipe-text-container">
+                                    <h6 class="recipe-text-caption">Утиные ножки с овощами и грудинкой</h6>
+                                    <div class="recipe-text-info">
+                                        <div class="recipe-text-info-container t">
+                                            <span>135 мин</span>
+                                        </div>
+                                        <div class="recipe-text-info-container co">
+                                            <span>Сложно</span>
+                                        </div>
+                                        <div class="recipe-text-info-container burn">
+                                            <span>125 ккал</span>
+                                        </div>
+                                    </div>
+                                    <p class="recipe-ingridiens">
+                                        говядина, масло топлёное, лук репчатый,
+                                        морковь, редька, перец сладкий, помидоры,
+                                        томат-пюре, картофель, чеснок, бульон мясной,
+                                        соль, перец чёрный, зелень петрушки...
+                                    </p>
+                                </div>
+                                <div class="recipe-text-social">
+                                    <div class="recipe-text-social-container">
+                                        <div class="likes"><span class="likes-amount">16</span> </div>
+                                        <div class="recipe-social-links">
+                                            <div class="recipe-vk">
+                                                <a href="#"><i class="fab fa-vk"></i></a>
+                                            </div>
+                                            <div class="recipe-fb">
+                                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                            </div>
+                                            <div class="recipe-ok">
+                                                <a href="#"><i class="fab fa-odnoklassniki"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="recipes-content-item">
+                            <div class="recipe-img-container">
+                                <img src="img/10.jpg" alt="recipe">
+                                <a href="#" class="recipe-author">
+                                    <div class="recipe-author-pic">
+                                        <img src="img/author.png" alt="author">
+                                    </div>
+                                    <span class="recipe-author-name">Hristin Fedorenko</span>
+                                </a>
+                            </div>
+                            <div class="recipe-text-wrapper">
+                                <div class="recipe-text-container">
+                                    <h6 class="recipe-text-caption">Салат из свеклы с козьим сыром и медовой заправкой</h6>
+                                    <div class="recipe-text-info">
+                                        <div class="recipe-text-info-container t">
+                                            <span>35 мин</span>
+                                        </div>
+                                        <div class="recipe-text-info-container co">
+                                            <span>Сложно</span>
+                                        </div>
+                                        <div class="recipe-text-info-container burn">
+                                            <span>125 ккал</span>
+                                        </div>
+                                    </div>
+                                    <p class="recipe-ingridiens">
+                                        говядина, масло топлёное, лук репчатый,
+                                        морковь, редька, перец сладкий, помидоры,
+                                        томат-пюре, картофель
+                                    </p>
+                                </div>
+                                <div class="recipe-text-social">
+                                    <div class="recipe-text-social-container">
+                                        <div class="likes"><span class="likes-amount">16</span> </div>
+                                        <div class="recipe-social-links">
+                                            <div class="recipe-vk">
+                                                <a href="#"><i class="fab fa-vk"></i></a>
+                                            </div>
+                                            <div class="recipe-fb">
+                                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                            </div>
+                                            <div class="recipe-ok">
+                                                <a href="#"><i class="fab fa-odnoklassniki"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="recipes-content-item">
+                            <div class="recipe-img-container">
+                                <img src="img/11.jpg" alt="recipe">
+                                <a href="#" class="recipe-author">
+                                    <div class="recipe-author-pic">
+                                        <img src="img/author.png" alt="author">
+                                    </div>
+                                    <span class="recipe-author-name">Dariya Fedorenko</span>
+                                </a>
+                            </div>
+                            <div class="recipe-text-wrapper">
+                                <div class="recipe-text-container">
+                                    <h6 class="recipe-text-caption">Американский тыквенный пирог с корицей</h6>
+                                    <div class="recipe-text-info">
+                                        <div class="recipe-text-info-container t">
+                                            <span>240 мин</span>
+                                        </div>
+                                        <div class="recipe-text-info-container co">
+                                            <span>Сложно</span>
+                                        </div>
+                                        <div class="recipe-text-info-container burn">
+                                            <span>125 ккал</span>
+                                        </div>
+                                    </div>
+                                    <p class="recipe-ingridiens">
+                                        лук репчатый, морковь, редька, перец сладкий, помидоры, томат-пюре, картофель, чеснок, бульон мясной,соль, перец чёрный, зелень петрушки...
+                                    </p>
+                                </div>
+                                <div class="recipe-text-social">
+                                    <div class="recipe-text-social-container">
+                                        <div class="likes"><span class="likes-amount">16</span> </div>
+                                        <div class="recipe-social-links">
+                                            <div class="recipe-vk">
+                                                <a href="#"><i class="fab fa-vk"></i></a>
+                                            </div>
+                                            <div class="recipe-fb">
+                                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                            </div>
+                                            <div class="recipe-ok">
+                                                <a href="#"><i class="fab fa-odnoklassniki"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="recipes-content-item">
+                            <div class="recipe-img-container">
+                                <img src="img/12.jpg" alt="recipe">
+                                <a href="#" class="recipe-author">
+                                    <div class="recipe-author-pic">
+                                        <img src="img/author.png" alt="author">
+                                    </div>
+                                    <span class="recipe-author-name">Dariya Fedorenko</span>
+                                </a>
+                            </div>
+                            <div class="recipe-text-wrapper">
+                                <div class="recipe-text-container">
+                                    <h6 class="recipe-text-caption">Салат «Цезарь» традиционный фасолью</h6>
+                                    <div class="recipe-text-info">
+                                        <div class="recipe-text-info-container t">
+                                            <span>107 мин</span>
+                                        </div>
+                                        <div class="recipe-text-info-container co">
+                                            <span>Сложно</span>
+                                        </div>
+                                        <div class="recipe-text-info-container burn">
+                                            <span>125 ккал</span>
+                                        </div>
+                                    </div>
+                                    <p class="recipe-ingridiens">
+                                        говядина, масло топлёное, лук репчатый,
+                                        морковь, редька, перец сладкий, помидоры,
+                                        томат-пюре, картофель, чеснок, бульон мясной,
+                                        соль, перец чёрный
+                                    </p>
+                                </div>
+                                <div class="recipe-text-social">
+                                    <div class="recipe-text-social-container">
+                                        <div class="likes"><span class="likes-amount">16</span> </div>
+                                        <div class="recipe-social-links">
+                                            <div class="recipe-vk">
+                                                <a href="#"><i class="fab fa-vk"></i></a>
+                                            </div>
+                                            <div class="recipe-fb">
+                                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                            </div>
+                                            <div class="recipe-ok">
+                                                <a href="#"><i class="fab fa-odnoklassniki"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="recipes-content-item">
+                            <div class="recipe-img-container">
+                                <img src="img/13.jpg" alt="recipe">
+                                <a href="#" class="recipe-author">
+                                    <div class="recipe-author-pic">
+                                        <img src="img/author.png" alt="author">
+                                    </div>
+                                    <span class="recipe-author-name">Daria Fedorenko</span>
+                                </a>
+                            </div>
+                            <div class="recipe-text-wrapper">
+                                <div class="recipe-text-container">
+                                    <h6 class="recipe-text-caption">Соте из брюссельской капусты с варено-копченым окороком</h6>
+                                    <div class="recipe-text-info">
+                                        <div class="recipe-text-info-container t">
+                                            <span>135 мин</span>
+                                        </div>
+                                        <div class="recipe-text-info-container co">
+                                            <span>Сложно</span>
+                                        </div>
+                                        <div class="recipe-text-info-container burn">
+                                            <span>125 ккал</span>
+                                        </div>
+                                    </div>
+                                    <p class="recipe-ingridiens">
+                                        говядина, масло топлёное, лук репчатый,
+                                        морковь, редька, перец сладкий, помидоры,
+                                        томат-пюре, картофель, чеснок, бульон мясной,
+                                        соль, перец чёрный, зелень петрушки...
+                                    </p>
+                                </div>
+                                <div class="recipe-text-social">
+                                    <div class="recipe-text-social-container">
+                                        <div class="likes"><span class="likes-amount">16</span> </div>
+                                        <div class="recipe-social-links">
+                                            <div class="recipe-vk">
+                                                <a href="#"><i class="fab fa-vk"></i></a>
+                                            </div>
+                                            <div class="recipe-fb">
+                                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                            </div>
+                                            <div class="recipe-ok">
+                                                <a href="#"><i class="fab fa-odnoklassniki"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="recipes-content-item">
+                            <div class="recipe-img-container">
+                                <img src="img/14.jpg" alt="recipe">
+                                <a href="#" class="recipe-author">
+                                    <div class="recipe-author-pic">
+                                        <img src="img/author.png" alt="author">
+                                    </div>
+                                    <span class="recipe-author-name">Hristin Fedorenko</span>
+                                </a>
+                            </div>
+                            <div class="recipe-text-wrapper">
+                                <div class="recipe-text-container">
+                                    <h6 class="recipe-text-caption">Жареные баклажаны с помидорами</h6>
+                                    <div class="recipe-text-info">
+                                        <div class="recipe-text-info-container t">
+                                            <span>35 мин</span>
+                                        </div>
+                                        <div class="recipe-text-info-container co">
+                                            <span>Сложно</span>
+                                        </div>
+                                        <div class="recipe-text-info-container burn">
+                                            <span>125 ккал</span>
+                                        </div>
+                                    </div>
+                                    <p class="recipe-ingridiens">
+                                        говядина, масло топлёное, лук репчатый,
+                                        морковь, редька, перец сладкий, помидоры,
+                                        томат-пюре, картофель
+                                    </p>
+                                </div>
+                                <div class="recipe-text-social">
+                                    <div class="recipe-text-social-container">
+                                        <div class="likes"><span class="likes-amount">16</span> </div>
+                                        <div class="recipe-social-links">
+                                            <div class="recipe-vk">
+                                                <a href="#"><i class="fab fa-vk"></i></a>
+                                            </div>
+                                            <div class="recipe-fb">
+                                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                            </div>
+                                            <div class="recipe-ok">
+                                                <a href="#"><i class="fab fa-odnoklassniki"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="recipes-content-item">
+                            <div class="recipe-img-container">
+                                <img src="img/15.jpg" alt="recipe">
+                                <a href="#" class="recipe-author">
+                                    <div class="recipe-author-pic">
+                                        <img src="img/author.png" alt="author">
+                                    </div>
+                                    <span class="recipe-author-name">Dariya Fedorenko</span>
+                                </a>
+                            </div>
+                            <div class="recipe-text-wrapper">
+                                <div class="recipe-text-container">
+                                    <h6 class="recipe-text-caption">Наварен из говядины</h6>
+                                    <div class="recipe-text-info">
+                                        <div class="recipe-text-info-container t">
+                                            <span>240 мин</span>
+                                        </div>
+                                        <div class="recipe-text-info-container co">
+                                            <span>Сложно</span>
+                                        </div>
+                                        <div class="recipe-text-info-container burn">
+                                            <span>125 ккал</span>
+                                        </div>
+                                    </div>
+                                    <p class="recipe-ingridiens">
+                                        лук репчатый, морковь, редька, перец сладкий, помидоры, томат-пюре, картофель, чеснок, бульон мясной,соль, перец чёрный, зелень петрушки...
+                                    </p>
+                                </div>
+                                <div class="recipe-text-social">
+                                    <div class="recipe-text-social-container">
+                                        <div class="likes"><span class="likes-amount">16</span> </div>
+                                        <div class="recipe-social-links">
+                                            <div class="recipe-vk">
+                                                <a href="#"><i class="fab fa-vk"></i></a>
+                                            </div>
+                                            <div class="recipe-fb">
+                                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                            </div>
+                                            <div class="recipe-ok">
+                                                <a href="#"><i class="fab fa-odnoklassniki"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="recipes-content-item">
+                            <div class="recipe-img-container">
+                                <img src="img/16.jpg" alt="recipe">
+                                <a href="#" class="recipe-author">
+                                    <div class="recipe-author-pic">
+                                        <img src="img/author.png" alt="author">
+                                    </div>
+                                    <span class="recipe-author-name">Dariya Fedorenko</span>
+                                </a>
+                            </div>
+                            <div class="recipe-text-wrapper">
+                                <div class="recipe-text-container">
+                                    <h6 class="recipe-text-caption">Брюссельская капуста с белым соусом с сыром</h6>
+                                    <div class="recipe-text-info">
+                                        <div class="recipe-text-info-container t">
+                                            <span>107 мин</span>
+                                        </div>
+                                        <div class="recipe-text-info-container co">
+                                            <span>Сложно</span>
+                                        </div>
+                                        <div class="recipe-text-info-container burn">
+                                            <span>125 ккал</span>
+                                        </div>
+                                    </div>
+                                    <p class="recipe-ingridiens">
+                                        говядина, масло топлёное, лук репчатый,
+                                        морковь, редька, перец сладкий, помидоры,
+                                        томат-пюре, картофель, чеснок, бульон мясной,
+                                        соль, перец чёрный
+                                    </p>
+                                </div>
+                                <div class="recipe-text-social">
+                                    <div class="recipe-text-social-container">
+                                        <div class="likes"><span class="likes-amount">16</span> </div>
+                                        <div class="recipe-social-links">
+                                            <div class="recipe-vk">
+                                                <a href="#"><i class="fab fa-vk"></i></a>
+                                            </div>
+                                            <div class="recipe-fb">
+                                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                            </div>
+                                            <div class="recipe-ok">
+                                                <a href="#"><i class="fab fa-odnoklassniki"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="recipes-content-item">
+                            <div class="recipe-img-container">
+                                <img src="img/17.jpg" alt="recipe">
+                                <a href="#" class="recipe-author">
+                                    <div class="recipe-author-pic">
+                                        <img src="img/author.png" alt="author">
+                                    </div>
+                                    <span class="recipe-author-name">Dariya Fedorenko</span>
+                                </a>
+                            </div>
+                            <div class="recipe-text-wrapper">
+                                <div class="recipe-text-container">
+                                    <h6 class="recipe-text-caption">Печеночный торт с морковью и луком</h6>
+                                    <div class="recipe-text-info">
+                                        <div class="recipe-text-info-container t">
+                                            <span>240 мин</span>
+                                        </div>
+                                        <div class="recipe-text-info-container co">
+                                            <span>Сложно</span>
+                                        </div>
+                                        <div class="recipe-text-info-container burn">
+                                            <span>125 ккал</span>
+                                        </div>
+                                    </div>
+                                    <p class="recipe-ingridiens">
+                                        лук репчатый, морковь, редька, перец сладкий, помидоры, томат-пюре, картофель, чеснок, бульон мясной,соль, перец чёрный, зелень петрушки...
+                                    </p>
+                                </div>
+                                <div class="recipe-text-social">
+                                    <div class="recipe-text-social-container">
+                                        <div class="likes"><span class="likes-amount">16</span> </div>
+                                        <div class="recipe-social-links">
+                                            <div class="recipe-vk">
+                                                <a href="#"><i class="fab fa-vk"></i></a>
+                                            </div>
+                                            <div class="recipe-fb">
+                                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                            </div>
+                                            <div class="recipe-ok">
+                                                <a href="#"><i class="fab fa-odnoklassniki"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="recipes-content-item">
+                            <div class="recipe-img-container">
+                                <img src="img/18.jpg" alt="recipe">
+                                <a href="#" class="recipe-author">
+                                    <div class="recipe-author-pic">
+                                        <img src="img/author.png" alt="author">
+                                    </div>
+                                    <span class="recipe-author-name">Dariya Fedorenko</span>
+                                </a>
+                            </div>
+                            <div class="recipe-text-wrapper">
+                                <div class="recipe-text-container">
+                                    <h6 class="recipe-text-caption">Классический крабовый салат с огурцом и мидиями</h6>
+                                    <div class="recipe-text-info">
+                                        <div class="recipe-text-info-container t">
+                                            <span>107 мин</span>
+                                        </div>
+                                        <div class="recipe-text-info-container co">
+                                            <span>Сложно</span>
+                                        </div>
+                                        <div class="recipe-text-info-container burn">
+                                            <span>125 ккал</span>
+                                        </div>
+                                    </div>
+                                    <p class="recipe-ingridiens">
+                                        говядина, масло топлёное, лук репчатый,
+                                        морковь, редька, перец сладкий, помидоры,
+                                        томат-пюре, картофель, чеснок, бульон мясной,
+                                        соль, перец чёрный
+                                    </p>
+                                </div>
+                                <div class="recipe-text-social">
+                                    <div class="recipe-text-social-container">
+                                        <div class="likes"><span class="likes-amount">16</span> </div>
+                                        <div class="recipe-social-links">
+                                            <div class="recipe-vk">
+                                                <a href="#"><i class="fab fa-vk"></i></a>
+                                            </div>
+                                            <div class="recipe-fb-f">
+                                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                            </div>
+                                            <div class="recipe-ok">
+                                                <a href="#"><i class="fab fa-odnoklassniki"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="branch">
+                    <div></div>
+                </div>
+                <section class="hot-compilation">
+                    <h1>#горячаяподборка</h1>
+                    <div class="hot-compilation-container">
+                        <div class="hot-compilation-item">
+                            <a href="#">
+                                <img src="img/19.jpg" alt="recipe">
+                                <h3 class="hot-compilation-caption">похмельные рецепты</h3>
+                            </a>
+                        </div>
+                        <div class="hot-compilation-item">
+                            <a href="#">
+                                <img src="img/20.jpg" alt="recipe">
+                                <h3 class="hot-compilation-caption">масленица</h3>
+                            </a>
+                        </div>
+                        <div class="hot-compilation-item">
+                            <a href="#">
+                                <img src="img/21.jpg" alt="recipe">
+                                <h3 class="hot-compilation-caption">рецепты для<br> детей</h3>
+                            </a>
+                        </div>
+                        <div class="hot-compilation-item">
+                            <a href="#">
+                                <img src="img/22.jpg" alt="recipe">
+                                <h3 class="hot-compilation-caption">здоровое питание</h3>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="authors">
+                    <h1>топ авторов</h1>
+                    <div class="authors-wrapper">
+                        <div class="authors-container">
+                            <div class="author">
+                                <a href="#">
+                                    <img src="img/author_1.png" alt="author">
+                                </a>
+                            </div>
+                            <div class="author">
+                                <a href="#">
+                                    <img src="img/author_2.png" alt="author">
+                                </a>
+                            </div>
+                            <div class="author">
+                                <a href="#">
+                                    <img src="img/author_3.png" alt="author">
+                                </a>
+                            </div>
+                            <div class="author">
+                                <a href="#">
+                                    <img src="img/author_4.png" alt="author">
+                                </a>
+                            </div>
+                            <div class="author">
+                                <a href="#">
+                                    <img src="img/author_5.png" alt="author">
+                                </a>
+                            </div>
+                            <div class="author">
+                                <a href="#">
+                                    <img src="img/author_6.png" alt="author">
+                                </a>
+                            </div>
+                            <div class="author">
+                                <a href="#">
+                                    <img src="img/author_7.png" alt="author">
+                                </a>
+                            </div>
+                            <div class="author">
+                                <a href="#">
+                                    <img src="img/author_8.png" alt="author">
+                                </a>
+                            </div>
+                            <div class="author">
+                                <a href="#">
+                                    <img src="img/author_9.png" alt="author">
+                                </a>
+                            </div>
+                            <div class="author">
+                                <a href="#">
+                                    <img src="img/author_6.png" alt="author">
+                                </a>
+                            </div>
+                            <div class="author">
+                                <a href="#">
+                                    <img src="img/author_7.png" alt="author">
+                                </a>
+                            </div>
+                            <div class="author">
+                                <a href="#">
+                                    <img src="img/author_1.png" alt="author">
+                                </a>
+                            </div>
+                            <div class="author">
+                                <a href="#">
+                                    <img src="img/author_2.png" alt="author">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="subscribe">
+                <div class="subscribe-container">
+                    <span class="subscribe-text">ПОДПИШИТЕСЬ НА РАССЫЛКУ РЕЦЕПТОВ И СОВЕТОВ</span>
+                    <form action="#" class="subscribe-input">
+                        <input type="text" placeholder="Адрес электронной почты">
+                        <button class="subscribe-button">
+                            <i class="fas fa-angle-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <footer class="footer-wrapper">
+                <div class="footer container">
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">главная</a>
+                        <a href="#" class="footer-link">рецепты</a>
+                        <a href="#" class="footer-link">идеи</a>
+                        <a href="#" class="footer-link">журнал</a>
+                        <a href="#" class="footer-link">авторы</a>
+                        <a href="#" class="footer-link">реклама</a>
+                        <a href="#" class="footer-link">faq</a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link vk">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="#" class="footer-social-link fb">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="footer-social-link inst">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="footer-social-link gplus">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+.recipe-grid {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.recipe-picture {
+  height: auto;
+  max-width: 100%;
+}
+
+.recipe-grid-item {
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.recipe-big-caption-container {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 350px;
+  text-align: center;
+  h2, h5 {
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  h2 {
+    letter-spacing: 1px;
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 11px;
+  }
+  &::after {
+  content: url("/img/icons.svg");
+  }
+}
+
+.small-captions-container {
+  top: 13px;
+  left: 15px;
+  position: absolute;
+  h3 {
+    font-size: 19px;
+    font-weight: 400;
+    color: #333;
+    text-transform: uppercase;
+  }
+}
+
+.recipe-small-caption-container {
+  background-color: rgba(255,255,255,0.7);
+  padding: 8px 14px;
+}
+
+.useful {
+  padding: 11px 19px 11px 43px;
+  background-color: $dark;
+  text-transform: uppercase;
+  font-size: 19px;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  span {
+  text-transform: uppercase;
+  }
+  &::before {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    left: 11px;
+    content: "";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f19d"
+  }
+}
+
+@media (max-width: 1300px) {
+  .recipe-grid {
+    justify-content: center;
+  }
+  .recipe-grid-item {
+    padding: 5px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .recipe-big-caption-container {
+    h5 {
+      font-size: 11px;
+    }
+    h2 {
+      font-size: 30px;
+    }
+  }
+}
+
+@media (max-width: 565px) {
+  .recipe-selection-sort {
+    flex-direction: column;
+  }
+  .selection-sort-container {
+    justify-content: center;
+  }
+  .selection-buttons {
+    margin-top: 10px;
+    justify-content: space-between;
+  }
+  .selection-ing, .selection-button {
+    padding: 3px;
+  }
+}
+
+@media (max-width: 500px) {
+  .recipe-big-caption-container {
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 350px) {
+  .recipe-big-caption-container {
+    h2 {
+      font-size: 24px;
+    }
+  }
+}
+
+

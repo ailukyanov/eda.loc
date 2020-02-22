@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+input, textarea, select {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+figure {
+  margin: 0;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  font-family: $PFr;
+  color: $text-color;
+}
+
+.container {
+  max-width: 1136px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.content {
+  margin: 26px auto 0 auto;
+  font-family: $PFr;
+  width: 87.19%;
+  a {
+    color: $text-color;
+  }
+}
+
+section {
+  > h1 {
+    font-family: $PFr;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+

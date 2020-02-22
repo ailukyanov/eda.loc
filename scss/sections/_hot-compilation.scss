@@ -1,0 +1,33 @@
+.hot-compilation-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 42px;
+  flex-wrap: wrap;
+}
+
+.hot-compilation-item {
+  position: relative;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.hot-compilation-caption {
+  text-transform: uppercase;
+  color: #f0f0f0;
+  font-size: 30px;
+  position: absolute;
+  bottom: 42px;
+  font-weight: 400;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%);
+  max-width: 130px;
+}
+
+@media (max-width: 1271px) {
+  .hot-compilation-item {
+    margin-bottom: 5px;
+  }
+}

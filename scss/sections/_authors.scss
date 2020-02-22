@@ -1,0 +1,28 @@
+.authors-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 34px;
+}
+
+.authors-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.author {
+  margin-right: 19px;
+  &:last-child {
+    margin-right: 0;
+  }
+  img {
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .authors {
+    display: none;
+  }
+}

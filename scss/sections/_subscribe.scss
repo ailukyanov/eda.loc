@@ -1,0 +1,47 @@
+.subscribe {
+  display: flex;
+  justify-content: center;
+  margin-top: 23px;
+  background-color: #e8e8e8;
+  width: 100%;
+  text-align: center;
+}
+
+.subscribe-text {
+  color: $very-dark;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 23px;
+  display: inline-block;
+}
+
+.subscribe-input {
+  margin-bottom: 46px;
+  margin-top: 24px;
+  position: relative;
+  input {
+    padding: 12px 48px 12px 18px;
+    background-color: #fff;
+    width: 350px;
+  }
+  button {
+    position: absolute;
+    height: 100%;
+    width: 30px;
+    top: 0;
+    right: 0;
+    background-color: $very-dark;
+    i {
+      color: #fff;
+      font-size: 22px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .subscribe-input {
+    input {
+      width: 250px;
+    }
+  }
+}
