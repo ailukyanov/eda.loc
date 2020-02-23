@@ -7,5 +7,4 @@ document.addEventListener("DOMContentLoaded", function () {
         aside.classList.toggle("shown");
     });
 
-
 });
